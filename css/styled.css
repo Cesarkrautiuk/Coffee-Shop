@@ -56,12 +56,12 @@ section {
   z-index: 1000;
 }
 .header .logo img {
-  height: 8rem;
+  height: 6rem;
 }
 
 .header .navbar a {
   margin: 0 1rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #ffff;
 }
 .header .navbar a:hover {
@@ -72,7 +72,7 @@ section {
 .header .icons div {
   color: #ffff;
   cursor: pointer;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   margin-left: 2rem;
 }
 .header .icons div:hover {
@@ -173,6 +173,68 @@ header .search-form.active {
   width: 100%;
   text-align: center;
 }
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../images/home-img.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home .content {
+  max-width: 60rem;
+}
+
+.home .content h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.home .content p {
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #eee;
+}
+
+.heading {
+  text-align: center;
+  color: #fff;
+  text-decoration: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+.heading span {
+  color: var(--main-color);
+  text-decoration: uppercase;
+}
+.about .row {
+  display: flex;
+  align-items: center;
+  background: var(--black);
+  flex-wrap: wrap;
+}
+.about .row .image {
+  flex: 1 1 45rem;
+}
+.about .row .image img {
+  width: 100%;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+.about .row .content h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+.about .row .content p {
+  font-size: 1.6rem;
+  color: #ccc;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
 
 @media (max-width: 991px) {
   html {
@@ -230,30 +292,4 @@ header .search-form.active {
   html {
     font-size: 50%;
   }
-  .home {
-    background-position: top;
-  }
-}
-.home {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background: url(../images/home-img.jpeg) no-repeat;
-  background-size: cover;
-}
-.home .content {
-  max-width: 60rem;
-}
-
-.home .content h3 {
-  font-size: 6rem;
-  text-transform: uppercase;
-  color: #fff;
-}
-.home .content p {
-  font-size: 2rem;
-  font-weight: lighter;
-  line-height: 1.8;
-  padding: 1rem 0;
-  color: #eee;
 }
